@@ -1,0 +1,74 @@
+/*
+	Typography ~ Blender CSS.
+	Typography style sheet
+	Dave Merwin: dave@davemerwin.com
+	
+	Thanks to Mark Boulton for the ratios to correctly indicate font size hierarchy.
+	
+	Given a 12px font as body copy and the baseline for the sites the sites Typography will work as follows:
+	50%(6px), 66%(8px), 75%(9px), 83%(10px), 91%(11px), 116%(14px), 150%(20px), 200%(24px), 250%(30px), 300%(36px), 400%(48px), 500%(60px), 600%(72px)
+	
+	or...
+	
+	You can set the base to be 10px and use EMs to set your font size. So that would be:
+	
+	body {font-size:62.5%} This gives you a font base of roughly 10px.
+	
+	This now make everything divisable by 10. so:
+	.6em(6px), .8em(8px), .9em(9px), 1.1em(11px), 1.2em(12px), 1.4em(14px), 1.8em(20px), 2.4em(px), 3em(30px), 3.6em(36px), 4.8em(48px), 6em(60px), 7.2em(72px)
+		
+	Feel free to change based on your ultimate goals.
+	
+	Or... you can just use pixels, which is what I've done here ;-)
+	
+*/
+
+/* =Baseline Grid
+----------------------------------------------------------------------------*/
+body {font-size:14px;}
+
+h1, h2, h3 {letter-spacing:-1px;}
+h1 {font-size:36px; line-height:42px;}
+h2 {font-size:30px; line-height:36px;}
+h3 {font-size:24px; line-height:30px;}
+h4 {font-size:18px; line-height:24px;}
+h5 {font-size:inherit; line-height:20px;}
+
+p {line-height:20px;}
+
+li {margin:0; padding:0; line-height:20px;}
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset { margin:0 0 20px 0; }
+
+a:focus {
+	outline: 1px dotted invert;
+}
+
+/* =General
+----------------------------------------------------------------------------*/
+
+/* =Links
+----------------------------------------------------------------------------*/
+
+/* =Image Replacement
+----------------------------------------------------------------------------*/
+.mir { letter-spacing : -1000em; }
+/* Just for Opera, but hide from MacIE */
+/*\*/html>body .mir { letter-spacing : normal; text-indent : -999em; overflow : hidden;}
+/* End of hack */
+
+p.mir {line-height:0;}
