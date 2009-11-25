@@ -25,18 +25,43 @@
 
 /* =Baseline Grid
 ----------------------------------------------------------------------------*/
-body {font-size:14px;}
+body {
+	font-size:14px;
+}
 
-h1, h2, h3 {letter-spacing:-1px;}
-h1 {font-size:36px; line-height:42px;}
-h2 {font-size:30px; line-height:36px;}
-h3 {font-size:24px; line-height:30px;}
-h4 {font-size:18px; line-height:24px;}
-h5 {font-size:inherit; line-height:20px;}
+h1, h2, h3 {
+	letter-spacing:-1px;
+}
+h1 {
+	font-size:36px;
+	line-height:42px;
+}
+h2 {
+	font-size:30px;
+	line-height:36px;
+}
+h3 {
+	font-size:24px;
+	line-height:30px;
+}
+h4 {
+	font-size:18px;
+	line-height:24px;
+}
+h5 {
+	font-size:inherit;
+	line-height:20px;
+}
 
-p {line-height:20px;}
+p {
+	line-height:20px;
+}
 
-li {margin:0; padding:0; line-height:20px;}
+li {
+	margin:0;
+	padding:0;
+	line-height:20px;
+}
 
 p,
 dl,
@@ -52,7 +77,9 @@ ul,
 pre,
 table,
 address,
-fieldset { margin:0 0 20px 0; }
+fieldset {
+	margin:0 0 20px 0;
+}
 
 a:focus {
 	outline: 1px dotted invert;
@@ -66,9 +93,16 @@ a:focus {
 
 /* =Image Replacement
 ----------------------------------------------------------------------------*/
-.mir { letter-spacing : -1000em; }
+.mir {
+	letter-spacing : -1000em;
+}
 /* Just for Opera, but hide from MacIE */
-/*\*/html>body .mir { letter-spacing : normal; text-indent : -999em; overflow : hidden;}
+/*\*/html>body .mir {
+	letter-spacing : normal;
+	text-indent : -999em;
+	overflow : hidden;
+}
 /* End of hack */
 
-p.mir {line-height:0;}
+p.mir {
+	line-height:0;
