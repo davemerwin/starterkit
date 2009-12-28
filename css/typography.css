@@ -29,9 +29,6 @@ body {
 	font-size:14px;
 }
 
-h1, h2, h3 {
-	letter-spacing:-1px;
-}
 h1 {
 	font-size:36px;
 	line-height:42px;
@@ -83,6 +80,14 @@ fieldset {
 
 a:focus {
 	outline: 1px dotted invert;
+}
+
+ul {
+    list-style:disc;
+}
+
+ol {
+    list-style:decimal;
 }
 
 /* =General
